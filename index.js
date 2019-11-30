@@ -29,6 +29,7 @@ const Calculator = {
   }
 }
 
-function actionApplyer(){
-  
+function actionApplyer(a,arr){
+arr.forEach(item=>{a=item(a)})
+return a;
 }
